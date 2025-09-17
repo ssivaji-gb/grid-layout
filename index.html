@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .grid-container{
+            width: 60%;
+            height: 500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+           gap: 8px;
+           padding: 8px;  
+           grid-template-areas:
+           ' item-1 item-2 item-3'
+           'item-1 item-5 item-3'
+           'item-4 item-5 item-6'
+           ;  
+           
+    
+           
+        }
+           .item-1{
+            grid-area: item-1;
+           }
+            .item-2{
+            grid-area: item-2;
+           }
+             .item-3{
+            grid-area: item-3;
+           }
+            .item-4{
+            grid-area: item-4;
+           }
+             .item-5{
+            grid-area: item-5;
+           }
+            .item-6{
+            grid-area: item-6;
+           }
+
+        body{
+            padding-top: 5px;
+        }
+        div{
+            background-color: aquamarine;
+        }
+        .item{
+            background-color: blue;
+        }
+        .item img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        
+            <div class="item item-1" ><img src="one.jpg" alt="" ></div>
+            <div class="item item-2" ><img src="two.png" alt=""></div>
+            <div class="item item-3" ><img src="three.jpg" alt=""></div>
+            <div class="item item-4" ><img src="four.jpg" alt=""></div>
+            <div class="item item-5" ><img src="five.jpg" alt=""></div>
+            <div class="item item-6" ><img src="six.png" alt=""></div>
+
+
+
+
+
+
+        
+    </div>
+</body>
+
+</html>
